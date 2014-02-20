@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    UIImage *image;
+}
 
 @end
 
@@ -18,10 +21,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self sampleSepia:sepiaFilter];
-    [self sampleBlackAndWhite:bnwFilter];
-    [self sampleFade:fadeFilter];
-    [self sampleInstant:intantFilter];
+    image = [UIImage imageNamed:@"Nature.jpg"];
+    [self sampleSepia:sepiaFilter image:image];
+    [self sampleBlackAndWhite:bnwFilter image:image];
+    [self sampleFade:fadeFilter image:image];
+    [self sampleInstant:intantFilter image:image];
     
 }
 
@@ -35,9 +39,10 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)sampleSepia:(UIImageView *) sepia
+-(void)sampleSepia:(UIImageView *) sepia image: (UIImage*) img
 {
-    CIImage *natureImage = [[CIImage alloc] initWithCGImage:sepia.image.CGImage options:nil];
+
+    CIImage *natureImage = [[CIImage alloc] initWithCGImage:img.CGImage options:nil];
     
     CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"
                                   keysAndValues: kCIInputImageKey, natureImage,
@@ -48,8 +53,10 @@
     sepia.image = newImage;
 }
 
--(void)sampleBlackAndWhite :(UIImageView *) bnw{
-    CIImage *natureImage = [[CIImage alloc] initWithCGImage:bnw.image.CGImage options:nil];
+-(void)sampleBlackAndWhite :(UIImageView *) bnw  image:(UIImage*) img
+{
+    
+    CIImage *natureImage = [[CIImage alloc] initWithCGImage:img.CGImage options:nil];
     
     CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectNoir"
                                   keysAndValues: kCIInputImageKey, natureImage,nil];
@@ -58,9 +65,11 @@
     UIImage *newImage = [UIImage imageWithCIImage:outputImage];
     bnw.image = newImage;
 }
--(void)sampleFade:(UIImageView *) fade{
+-(void)sampleFade:(UIImageView *) fade image: (UIImage*) img
+{
+
     
-    CIImage *natureImage = [[CIImage alloc] initWithCGImage:fade.image.CGImage options:nil];
+    CIImage *natureImage = [[CIImage alloc] initWithCGImage:img.CGImage options:nil];
     
     CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectFade"
                                   keysAndValues: kCIInputImageKey, natureImage, nil];
@@ -69,8 +78,10 @@
     UIImage *newImage = [UIImage imageWithCIImage:outputImage];
     fade.image = newImage;
 }
--(void)sampleInstant:(UIImageView *) instant{
-    CIImage *natureImage = [[CIImage alloc] initWithCGImage:instant.image.CGImage options:nil];
+-(void)sampleInstant:(UIImageView *) instant image: (UIImage*) img
+{
+
+    CIImage *natureImage = [[CIImage alloc] initWithCGImage:img.CGImage options:nil];
     
     CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectInstant"
                                   keysAndValues: kCIInputImageKey, natureImage, nil];
@@ -82,23 +93,23 @@
 }
 
 - (IBAction)changeToNormal:(id)sender {
-    mainImage.image = [UIImage imageNamed:@"Nature.jpg"];
+    mainImage.image = image;
 }
 
 - (IBAction)changeToSepia {
-    [self sampleSepia:mainImage];
+    [self sampleSepia:mainImage image:image];
 }
 
 - (IBAction)changeToBlackAndWhite {
-    [self sampleBlackAndWhite:mainImage];
+    [self sampleBlackAndWhite:mainImage image:image];
 }
 
 - (IBAction)changeToFade {
-    [self sampleFade:mainImage];
+    [self sampleFade:mainImage image:image];
 }
 
 - (IBAction)changeToInstant {
-    [self sampleInstant:mainImage];
+    [self sampleInstant:mainImage image:image];
 }
 
 
@@ -125,7 +136,7 @@
 
 -(void)imagePickerController:(UIImagePickerController *)imgPicker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    image = [info objectForKey:UIImagePickerControllerEditedImage];
     self.mainImage.image = image;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
