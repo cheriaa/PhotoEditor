@@ -24,6 +24,15 @@
 		4162A9B218B57E520029BB4B /* Nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4162A9B018B57E520029BB4B /* Nature.jpg */; };
 		4162A9B318B57E520029BB4B /* takephoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 4162A9B118B57E520029BB4B /* takephoto.png */; };
 		41A6CC9A18B6949800818065 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A6CC9918B6949800818065 /* CoreImage.framework */; };
+		41A6CC9D18B79F6900818065 /* PhotoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6CC9C18B79F6900818065 /* PhotoEditorViewController.m */; };
+		41A6CC9F18B79FF300818065 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A6CC9E18B79FF300818065 /* MobileCoreServices.framework */; };
+		41A6CCA218B7C74500818065 /* CamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6CCA118B7C74500818065 /* CamPreviewView.m */; };
+		41A6CCA618B7CA9A00818065 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6CCA518B7CA9A00818065 /* camera.png */; };
+		41A6CCA818B7CC8300818065 /* reverse_cam.png in Resources */ = {isa = PBXBuildFile; fileRef = 41A6CCA718B7CC8300818065 /* reverse_cam.png */; };
+		41FC72BF18BBC3A9000C2416 /* camera_switch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FC72BE18BBC3A9000C2416 /* camera_switch@2x.png */; };
+		41FC72C718BBE750000C2416 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC72C218BBE750000C2416 /* UIImage+Alpha.m */; };
+		41FC72C818BBE750000C2416 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC72C418BBE750000C2416 /* UIImage+Resize.m */; };
+		41FC72C918BBE750000C2416 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FC72C618BBE750000C2416 /* UIImage+RoundedCorner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +68,20 @@
 		4162A9B018B57E520029BB4B /* Nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nature.jpg; sourceTree = "<group>"; };
 		4162A9B118B57E520029BB4B /* takephoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takephoto.png; sourceTree = "<group>"; };
 		41A6CC9918B6949800818065 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		41A6CC9B18B79F6900818065 /* PhotoEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEditorViewController.h; sourceTree = "<group>"; };
+		41A6CC9C18B79F6900818065 /* PhotoEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorViewController.m; sourceTree = "<group>"; };
+		41A6CC9E18B79FF300818065 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		41A6CCA018B7C74500818065 /* CamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamPreviewView.h; sourceTree = "<group>"; };
+		41A6CCA118B7C74500818065 /* CamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamPreviewView.m; sourceTree = "<group>"; };
+		41A6CCA518B7CA9A00818065 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		41A6CCA718B7CC8300818065 /* reverse_cam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverse_cam.png; sourceTree = "<group>"; };
+		41FC72BE18BBC3A9000C2416 /* camera_switch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_switch@2x.png"; sourceTree = "<group>"; };
+		41FC72C118BBE750000C2416 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		41FC72C218BBE750000C2416 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		41FC72C318BBE750000C2416 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		41FC72C418BBE750000C2416 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		41FC72C518BBE750000C2416 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		41FC72C618BBE750000C2416 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A6CC9F18B79FF300818065 /* MobileCoreServices.framework in Frameworks */,
 				41A6CC9A18B6949800818065 /* CoreImage.framework in Frameworks */,
 				4162A97E18B57E210029BB4B /* CoreGraphics.framework in Frameworks */,
 				4162A98018B57E210029BB4B /* UIKit.framework in Frameworks */,
@@ -108,6 +132,7 @@
 		4162A97A18B57E200029BB4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41A6CC9E18B79FF300818065 /* MobileCoreServices.framework */,
 				41A6CC9918B6949800818065 /* CoreImage.framework */,
 				4162A97B18B57E200029BB4B /* Foundation.framework */,
 				4162A97D18B57E210029BB4B /* CoreGraphics.framework */,
@@ -120,13 +145,17 @@
 		4162A98118B57E210029BB4B /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
-				4162A9B018B57E520029BB4B /* Nature.jpg */,
-				4162A9B118B57E520029BB4B /* takephoto.png */,
+				41FC72CA18BBEFE6000C2416 /* Categories */,
+				41A6CCA918B7F04A00818065 /* Resources */,
 				4162A98A18B57E210029BB4B /* AppDelegate.h */,
 				4162A98B18B57E210029BB4B /* AppDelegate.m */,
 				4162A98D18B57E210029BB4B /* Main.storyboard */,
+				41A6CC9B18B79F6900818065 /* PhotoEditorViewController.h */,
+				41A6CC9C18B79F6900818065 /* PhotoEditorViewController.m */,
 				4162A99018B57E210029BB4B /* ViewController.h */,
 				4162A99118B57E210029BB4B /* ViewController.m */,
+				41A6CCA018B7C74500818065 /* CamPreviewView.h */,
+				41A6CCA118B7C74500818065 /* CamPreviewView.m */,
 				4162A99318B57E210029BB4B /* Images.xcassets */,
 				4162A98218B57E210029BB4B /* Supporting Files */,
 			);
@@ -160,6 +189,31 @@
 				4162A9A318B57E210029BB4B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41A6CCA918B7F04A00818065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41FC72BE18BBC3A9000C2416 /* camera_switch@2x.png */,
+				41A6CCA718B7CC8300818065 /* reverse_cam.png */,
+				4162A9B018B57E520029BB4B /* Nature.jpg */,
+				41A6CCA518B7CA9A00818065 /* camera.png */,
+				4162A9B118B57E520029BB4B /* takephoto.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		41FC72CA18BBEFE6000C2416 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				41FC72C118BBE750000C2416 /* UIImage+Alpha.h */,
+				41FC72C218BBE750000C2416 /* UIImage+Alpha.m */,
+				41FC72C318BBE750000C2416 /* UIImage+Resize.h */,
+				41FC72C418BBE750000C2416 /* UIImage+Resize.m */,
+				41FC72C518BBE750000C2416 /* UIImage+RoundedCorner.h */,
+				41FC72C618BBE750000C2416 /* UIImage+RoundedCorner.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +263,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ali Cheriaa";
 				TargetAttributes = {
+					4162A97718B57E200029BB4B = {
+						DevelopmentTeam = XSJXQJZKV7;
+					};
 					4162A99818B57E210029BB4B = {
 						TestTargetID = 4162A97718B57E200029BB4B;
 					};
@@ -241,8 +298,11 @@
 				4162A9B218B57E520029BB4B /* Nature.jpg in Resources */,
 				4162A99418B57E210029BB4B /* Images.xcassets in Resources */,
 				4162A98618B57E210029BB4B /* InfoPlist.strings in Resources */,
+				41FC72BF18BBC3A9000C2416 /* camera_switch@2x.png in Resources */,
 				4162A9B318B57E520029BB4B /* takephoto.png in Resources */,
+				41A6CCA618B7CA9A00818065 /* camera.png in Resources */,
 				4162A98F18B57E210029BB4B /* Main.storyboard in Resources */,
+				41A6CCA818B7CC8300818065 /* reverse_cam.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FC72C918BBE750000C2416 /* UIImage+RoundedCorner.m in Sources */,
 				4162A99218B57E210029BB4B /* ViewController.m in Sources */,
 				4162A98C18B57E210029BB4B /* AppDelegate.m in Sources */,
+				41FC72C718BBE750000C2416 /* UIImage+Alpha.m in Sources */,
+				41A6CCA218B7C74500818065 /* CamPreviewView.m in Sources */,
+				41A6CC9D18B79F6900818065 /* PhotoEditorViewController.m in Sources */,
 				4162A98818B57E210029BB4B /* main.m in Sources */,
+				41FC72C818BBE750000C2416 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,10 +455,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoEditor/PhotoEditor-Prefix.pch";
 				INFOPLIST_FILE = "PhotoEditor/PhotoEditor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,10 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoEditor/PhotoEditor-Prefix.pch";
 				INFOPLIST_FILE = "PhotoEditor/PhotoEditor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

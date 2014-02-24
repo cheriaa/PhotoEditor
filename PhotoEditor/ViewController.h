@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PhotoEditorViewController.h"
+@class PhotoEditorViewController;
 @interface ViewController : UIViewController<UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate>
-
-
 
 @property (strong, nonatomic) IBOutlet UIImageView *mainImage;
 @property (strong, nonatomic) IBOutlet UIImageView *normalFilter;
@@ -19,6 +18,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *fadeFilter;
 @property (strong, nonatomic) IBOutlet UIImageView *intantFilter;
 @property (strong, nonatomic) UIImagePickerController *imgPicker;
+@property (strong, nonatomic) UIImage * image;
+@property id test;
+
 - (IBAction)changeToNormal:(id)sender;
 
 - (IBAction)changeToSepia;

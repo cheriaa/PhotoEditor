@@ -10,23 +10,27 @@
 
 @interface ViewController ()
 {
-    UIImage *image;
+    UIImage * nature;
 }
+
+
 
 @end
 
 @implementation ViewController
-@synthesize imgPicker, normalFilter, sepiaFilter, bnwFilter, fadeFilter,intantFilter, mainImage;
+@synthesize imgPicker, normalFilter, sepiaFilter, bnwFilter, fadeFilter,intantFilter, mainImage,image, test;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    image = [UIImage imageNamed:@"Nature.jpg"];
-    [self sampleSepia:sepiaFilter image:image];
-    [self sampleBlackAndWhite:bnwFilter image:image];
-    [self sampleFade:fadeFilter image:image];
-    [self sampleInstant:intantFilter image:image];
-    
+    nature = [UIImage imageNamed:@"Nature.jpg"];
+    [self changeToNormal:nil];
+    [self sampleSepia:sepiaFilter image:nature];
+    [self sampleBlackAndWhite:bnwFilter image:nature];
+    [self sampleFade:fadeFilter image:nature];
+    [self sampleInstant:intantFilter image:nature];
+    //image = [[self PhotoEditorVC]test];
+    NSLog(@"hello baby %@", [self test]);
 }
 
 -(BOOL) shouldAutorotate
